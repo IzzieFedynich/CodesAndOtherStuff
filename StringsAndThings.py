@@ -64,3 +64,23 @@ if "y" in name:
     print("The letter y is in name")
 else:
     print("The letter y is not in name")
+
+    # String Methods to investigate:
+    # Method        Use Example         Explanation
+    # center        aStr.center(w)      Center is just another way to use a string to plug in things like letters or words
+    # ljust         aStr.ljust(w)
+    # rjust         aStr.rjust(w)
+    # upper         aStr.upper()
+    # lower         aStr.lower()
+    # index         aStr.index(item)
+    # rindex        aStr.rindex(item)
+    # find          aStr.find(item)
+    # rfind         aStr.rfind(item)
+    # replace       aStr.replace(old, new)  this can replace old words or phrases with new words or phrases
+
+    # Be sure to include multiple examples of all of them in use
+
+str = ("I just wanted to say hi")
+print(str.replace("hi", "bye"))
+
+
