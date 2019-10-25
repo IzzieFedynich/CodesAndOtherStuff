@@ -68,17 +68,57 @@ else:
     # String Methods to investigate:
     # Method        Use Example         Explanation
     # center        aStr.center(w)      Center is just another way to use a string to plug in things like letters or words
-    # ljust         aStr.ljust(w)
-    # rjust         aStr.rjust(w)
-    # upper         aStr.upper()
-    # lower         aStr.lower()
-    # index         aStr.index(item)
-    # rindex        aStr.rindex(item)
-    # find          aStr.find(item)
-    # rfind         aStr.rfind(item)
+    # ljust         aStr.ljust(w)       the w is the width and it returns the string left
+    # rjust         aStr.rjust(w)       the w is the width and it returns the string right
+    # upper         aStr.upper()        this string returns the string and makes the all the characters uppercased
+    # lower         aStr.lower()        this string returns the string and makes the all the characters lowercased
+    # index         aStr.index(item)    this returns the lowest index in that list
+    # rindex        aStr.rindex(item)   this returns the last index where str is found
+    # find          aStr.find(item)     this can tell you if string occurs in a substring or in a string
+    # rfind         aStr.rfind(item)    returns the last index where str is found or -1
     # replace       aStr.replace(old, new)  this can replace old words or phrases with new words or phrases
 
     # Be sure to include multiple examples of all of them in use
+
+str = "this is string example....wow!!!"
+print("str.center(40, 'a') : ", str.center(40, 'a'))
+
+str = "this is string example....wow!!!";
+print(str.ljust(50, '0'))
+
+str = "this is string example....wow!!!";
+print(str.rjust(50, '0'))
+
+str = "this is string example....wow!!!";
+print("str.capitalize() : ", str.upper())
+
+aList = [123, 'xyz', 'zara', 'abc'];
+print("Index for xyz : ", aList.index('xyz'))
+print("Index for zara : ", aList.index('zara'))
+
+str1 = "this is string example....wow!!!";
+str2 = "is";
+
+print(str1.rindex(str2))
+print(str1.index(str2))
+
+str1 = "this is string example....wow!!!";
+str2 = "exam";
+
+print(str1.find(str2))
+print(str1.find(str2, 10))
+print(str1.find(str2, 40))
+
+str1 = "this is really a string example....wow!!!";
+str2 = "is";
+
+print(str1.rfind(str2))
+print(str1.rfind(str2, 0, 10))
+print(str1.rfind(str2, 10, 0))
+
+print(str1.find(str2))
+print(str1.find(str2, 0, 10))
+print(str1.find(str2, 10, 0))
 
 str = ("I just wanted to say hi")
 print(str.replace("hi", "bye"))
