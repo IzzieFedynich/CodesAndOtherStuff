@@ -123,4 +123,14 @@ print(str1.find(str2, 10, 0))
 str = ("I just wanted to say hi")
 print(str.replace("hi", "bye"))
 
+# Character Functions
 
+print(ord('B'))
+# Wil give you the character like the number
+
+print(chr(97 + 13))
+# Will give you the ord according to the number you gave it
+# A=65 a=97
+
+print(str(12548))
+# Gives you the string 12548
