@@ -140,4 +140,15 @@ print(str(12548))
 from mapper import *
 
 print(letterToIndex('P'))
-print(indexToLetter(18))
+print(indexToLetter(10))
+
+# this_is_a_secret_message_that_i_want_to_transmit
+#   you have to break the message up into 2 parts
+#       you then want to add underscores as spaces
+#           you want to delete a letter of each word
+hsi__ertmsaeta__att_rnmtti_sasce_esg_htiwn_otasi
+
+from crypto import *
+
+print(scramble2Encrypt("GOOD MORNING LADIES AND GENTLEMEN"))
+
