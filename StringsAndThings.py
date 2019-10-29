@@ -132,7 +132,7 @@ print(chr(97 + 13))
 # Will give you the ord according to the number you gave it
 # A=65 a=97
 
-print(str(12548))
+# print(str(12548))
 # Gives you the string 12548
 
 # testing functions from mapper.py
@@ -143,12 +143,20 @@ print(letterToIndex('P'))
 print(indexToLetter(10))
 
 # this_is_a_secret_message_that_i_want_to_transmit
-#   you have to break the message up into 2 parts
+#   you have to break the message up into 2 parts/ find the middle
 #       you then want to add underscores as spaces
 #           you want to delete a letter of each word
-hsi__ertmsaeta__att_rnmtti_sasce_esg_htiwn_otasi
+#
 
-from crypto import *
+# How to decrypt
+#   Find the middle
+#       find out which letter was missing
+# hsi__ertmsaeta__att_rnmtti_sasce_esg_htiwn_otasi
+
+from Crypto import *
 
 print(scramble2Encrypt("GOOD MORNING LADIES AND GENTLEMEN"))
 
+print(scramble2Decrypt("ODMRIGLDE N ETEEGO ONN AISADGNLMN"))
+
+#get rid of spaces
