@@ -159,4 +159,12 @@ print(scramble2Encrypt("GOOD MORNING LADIES AND GENTLEMEN"))
 
 print(scramble2Decrypt("ODMRIGLDE N ETEEGO ONN AISADGNLMN"))
 
-#get rid of spaces
+
+# writie a stripSpace(text) function here
+
+print("Happy Birthday!")
+print("Happy Birthday!". replace(" ", ""))
+
+# write a ceasarEncrypt(plainText, shift)
+# write a caesarDecrypt(cipherText, shift)
+
