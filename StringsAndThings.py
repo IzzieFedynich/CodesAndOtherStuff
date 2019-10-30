@@ -120,8 +120,8 @@ print(str1.find(str2))
 print(str1.find(str2, 0, 10))
 print(str1.find(str2, 10, 0))
 
-str = ("I just wanted to say hi")
-print(str.replace("hi", "bye"))
+hi = ("I just wanted to say hi")
+print(hi.replace("hi", "bye"))
 
 # Character Functions
 
@@ -160,11 +160,16 @@ print(scramble2Encrypt("GOOD MORNING LADIES AND GENTLEMEN"))
 print(scramble2Decrypt("ODMRIGLDE N ETEEGO ONN AISADGNLMN"))
 
 
-# writie a stripSpace(text) function here
+# write a stripSpace(text) function here
 
-print("Happy Birthday!")
-print("Happy Birthday!". replace(" ", ""))
+def StripSpace(text):
+        return text.replace(" ", "")
 
-# write a ceasarEncrypt(plainText, shift)
+print(StripSpace("Happy Birthday"))
+
+
+
+
+# write a caesarEncrypt(plainText, shift)
 # write a caesarDecrypt(cipherText, shift)
 
