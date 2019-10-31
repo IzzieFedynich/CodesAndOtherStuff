@@ -188,6 +188,12 @@ def encrypt(n, plaintext):
     return result.lower()
 
 
+text = "happy halloween!."
+offset = 5
+encrypted = encrypt(offset, text)
+print('This is the encrypted message:', encrypted)
+
+# write a caesarDecrypt(cipherText, shift)
 def decrypt(n, ciphertext):
     """Decrypt the string and return the plaintext"""
     result = ''
@@ -201,13 +207,7 @@ def decrypt(n, ciphertext):
 
     return result
 
-text = "happy halloween!."
-offset = 5
-encrypted = encrypt(offset, text)
-print('This is the encrypted message:', encrypted)
-
 decrypted = decrypt(offset, encrypted)
 print('This is the decrypted message:', decrypted)
-# write a caesarDecrypt(cipherText, shift)
 
 
