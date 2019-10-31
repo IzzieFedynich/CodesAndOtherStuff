@@ -171,5 +171,43 @@ print(StripSpace("Happy Birthday"))
 
 
 # write a caesarEncrypt(plainText, shift)
+
+key = 'abcdefghijklmnopqrstuvwxyz'
+
+def encrypt(n, plaintext):
+    """Encrypt the string and return the Ciphertext"""
+    result = ''
+
+    for l in plaintext.lower():
+        try:
+            i = (key.index(l) + n) % 26
+            result += key[i]
+        except ValueError:
+            result += l
+
+    return result.lower()
+
+
+def decrypt(n, ciphertext):
+    """Decrypt the string and return the plaintext"""
+    result = ''
+
+    for l in ciphertext:
+        try:
+            i = (key.index(l) - n) % 26
+            result += key[i]
+        except ValueError:
+            result += l
+
+    return result
+
+text = "happy halloween!."
+offset = 5
+encrypted = encrypt(offset, text)
+print('This is the encrypted message:', encrypted)
+
+decrypted = decrypt(offset, encrypted)
+print('This is the decrypted message:', decrypted)
 # write a caesarDecrypt(cipherText, shift)
+
 
